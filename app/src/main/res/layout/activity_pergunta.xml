@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pergunta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.alinegame.curiosoquiz.PerguntaActivity">
+    <android.support.v7.widget.CardView
+        android:layout_margin="12dp"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:max="100"
+                android:id="@+id/progress"/>
+            <LinearLayout
+                android:padding="15dp"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/vida1"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:id="@+id/vida2"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+                <ImageView
+                    android:id="@+id/vida3"
+                    android:src="@drawable/heart"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:padding="30dp"
+                android:background="@color/colorViolet"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:id="@+id/linearDinamico"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text=""
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="20dp"
+                        android:id="@+id/txtPergunta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RadioGroup
+                        android:id="@+id/radioGroup"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:text=""
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18dp"
+                            android:id="@+id/radioButton4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnAnswer"
+                android:layout_margin="20dp"
+                android:layout_marginTop="15dp"
+                android:text="Responder"
+                android:background="@drawable/buttom_round_yellow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
